@@ -24,6 +24,7 @@
 # ide
 /.idea
 
+.eslintcache
 *.zip
 *.7z
 *.bak

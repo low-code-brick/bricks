@@ -3,9 +3,6 @@ export default {
   // description: '',
   locales: [['zh-CN', '中文']],
   mode: 'doc',
-  resolve: {
-    includes: ['docs', 'xxx']
-  },
   alias: {},
   // dynamicImport: {
   //   loading: '@/Loading',

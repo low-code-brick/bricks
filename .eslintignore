@@ -1,0 +1,13 @@
+/lambda/
+/scripts
+.history
+public
+dist
+.umi
+mock
+docs
+/*.json
+*.html
+*.tsx
+src/assets
+*.js
