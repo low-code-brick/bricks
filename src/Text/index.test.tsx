@@ -1,14 +1,13 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Foo from './index';
+import Text from './index';
 
-describe('<Foo />', () => {
-
+describe('<Text />', () => {
   it('render Foo with dumi', () => {
     const msg = 'dumi';
 
-    render(<Foo title={msg} />);
+    render(<Text>{msg}</Text>);
     // @ts-ignore
     expect(screen.queryByText(msg)).toBeInTheDocument();
   });

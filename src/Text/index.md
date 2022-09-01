@@ -1,13 +1,12 @@
+## Text
 
-## Foo
-
-Demo:
+文本组件
 
 ```tsx
 import React from 'react';
-import { Foo } from 'bricks';
+import { Text } from 'bricks';
 
-export default () => <Foo title="First Demo" />;
+export default () => <Text>Text Demo</Text>;
 ```
 
 More skills for writing demo: https://d.umijs.org/guide/basic#write-component-demo

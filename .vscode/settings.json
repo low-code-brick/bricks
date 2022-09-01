@@ -1,13 +1,13 @@
 {
   "files.exclude": {
     "**/node_modules": true,
-    "*.bak": true,
+    "*.bak": true
   },
   "path-autocomplete.pathMappings": {
     "@packages": "${folder}/packages"
   },
-  "eslint.format.enable": true,
-  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": false,
+  "eslint.alwaysShowStatus": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.validate": [
     "javascript",
@@ -15,7 +15,5 @@
     "typescript",
     "typescriptreact"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.formatOnSave": true
 }

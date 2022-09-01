@@ -10,21 +10,22 @@
   "scripts": {
     "build": "father build",
     "deploy": "npm run docs:build && npm run docs:deploy",
+    "dev": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "eslint": "eslint --cache --ext .jsx,.js,.ts,.tsx src/Foo/**",
-    "lint": "",
-    "lint:fix": "eslint --cache --fix --ext .jsx,.js,.ts,.tsx packages src",
+    "lint": "lint-staged",
     "prepublishOnly": "npm run build",
     "sort": "sort-package-json package.json",
-    "start": "dumi dev",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
+    "*.{js,jsx,md,json}": [
+      "prettier --write"
     ],
     "*.ts?(x)": [
+      "prettier --parser=typescript --write"
     ]
   },
   "dependencies": {
@@ -38,19 +39,14 @@
     "@testing-library/react": "^13.0.0",
     "@types/jest": "^27.0.3",
     "@types/react": "^18.0.15",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.18.0",
     "@umijs/fabric": "^2.12.2",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.1.0",
-    "eslint-plugin-metafizzy": "^2.0.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.30.1",
-    "eslint-plugin-standard": "^5.0.0",
     "father": "^4.0.0-rc.2",
     "gh-pages": "^3.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^10.0.7",
+    "react-dom": "^18.2.0",
     "sort-package-json": "^1.55.0",
     "typescript": "^4.7.4",
     "yorkie": "^2.0.0"

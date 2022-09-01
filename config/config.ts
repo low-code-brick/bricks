@@ -1,3 +1,4 @@
+// https://d.umijs.org/
 export default {
   // title
   // description: '',
@@ -7,7 +8,6 @@ export default {
   // dynamicImport: {
   //   loading: '@/Loading',
   // },
-  // import()
   dynamicImportSyntax: {},
   // 路由静态
   // exportStatic: { htmlSuffix: true },
