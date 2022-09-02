@@ -8,6 +8,9 @@ export default {
   // dynamicImport: {
   //   loading: '@/Loading',
   // },
+  resolve: {
+    excludes: ['src/core'],
+  },
   dynamicImportSyntax: {},
   // 路由静态
   // exportStatic: { htmlSuffix: true },

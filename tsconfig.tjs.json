@@ -5,13 +5,12 @@
     "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true,
-    "types": ["jest"],
+    "types": ["lodash"],
     "strict": true,
     "skipLibCheck": true,
     "declaration": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  // "exclude": ["src/**/!(props.types).ts"],
   "include": ["src/**/props.type.ts"]
 }
