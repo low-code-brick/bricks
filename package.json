@@ -2,7 +2,9 @@
   "name": "@low-code-brick/bricks",
   "version": "1.0.0",
   "private": true,
-  "module": "dist/esm/index.js",
+  "main": "lib/index.es.js",
+  "module": "src",
+  "browser": "lib/index.umd.cjs",
   "typings": "dist/esm/index.d.ts",
   "files": [
     "dist"
