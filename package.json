@@ -1,5 +1,5 @@
 {
-  "name": "bricks",
+  "name": "@low-code-brick/bricks",
   "version": "1.0.0",
   "private": true,
   "module": "dist/esm/index.js",
