@@ -15,23 +15,24 @@
     "docs:deploy": "gh-pages -d docs-dist",
     "eslint": "eslint --cache --ext .jsx,.js,.ts,.tsx src/Foo/**",
     "lint": "lint-staged",
-    "prepublishOnly": "npm run build",
     "prepare": "husky install",
+    "prepublishOnly": "npm run build",
     "sort": "sort-package-json package.json",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "tjs": "typescript-json-schema ./tsconfig.tjs.json * --out ./src/schema.json"
   },
   "lint-staged": {
+    "*.type.ts": [
+      "yarn tjs",
+      "prettier --write src/schema.json",
+      "git add src/schema.json"
+    ],
     "*.{js,jsx,md,json}": [
       "prettier --write"
     ],
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
-    ],
-    "*.type.ts": [
-      "yarn tjs",
-      "git add src/schema.json"
     ]
   },
   "dependencies": {
